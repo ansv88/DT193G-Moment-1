@@ -1,0 +1,143 @@
+  body {
+    margin: 0;
+    background-color: #f8f9fa;
+  }
+  
+  .header {
+    background-color: #991b1b; /* Motsvarar Tailwinds bg-red-800 */
+    padding: 0.5rem 0;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+  }
+  
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+  
+  .hamburger:hover {
+    background-color: #991b1b;
+  }
+  
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    display: none;
+    flex-direction: column;
+    background-color: #991b1b;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+  }
+  
+  .menu.active {
+    display: flex;
+  }
+  
+  .menu li {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .menu li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    padding-left: 1rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  
+  .menu a.active {
+    background-color: #ef4444; /* Motsvarar Tailwinds bg-red-500 */
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  
+  .container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    margin-top: 2rem;
+  }
+  
+  h2,
+  h4 {
+    color: #b91c1c; /* Motsvarar Tailwinds red-700 */
+  }
+  
+  .text-green-custom {
+    color: #166534; /* Motsvarar Tailwinds bg-green-800 */
+  }
+  
+  .footer {
+    background-color: #991b1b; /* Motsvarar Tailwinds bg-red-800 */
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  @media (min-width: 769px) {
+    .logo {
+      padding: 0;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  
+    .menu {
+      display: flex;
+      flex-direction: row;
+      background-color: transparent;
+      position: static;
+      padding: 0;
+    }
+  
+    .menu li {
+      margin: 0;
+    }
+  
+    .menu a {
+      padding: 0.5rem;
+    }
+  }
+  

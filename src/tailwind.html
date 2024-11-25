@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DT193G - Moment 1 | Tailwind CSS</title>
+  <link href="css/tailwind-custom.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/96c5f1dfde.js" crossorigin="anonymous"></script>
+  <script src="js/main.js" type="module"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans">
+  <header class="bg-red-800 text-white text-lg">
+    <nav class="max-w-[1320px] mx-auto px-4 py-4 md:py-2 flex items-center justify-between">
+      <div class="text-2xl font-bold z-30">
+        <a href="index.html">Moment 1</a>
+      </div>
+
+      <div class="bg-red-800 text-white nav-links transform -translate-y-full duration-500
+      md:transform-none md:translate-y-0 md:static md:ml-auto md:flex md:items-center
+      fixed top-0 left-0 w-full md:w-auto max-h-screen md:h-auto items-start md:px-5">
+        <ul class="w-full flex flex-col md:flex-row md:items-center gap-1 mt-20 md:mt-0 pb-4 md:pb-0 text-xl">
+          <li class="w-full md:w-auto">
+            <a class="block w-full md:inline-block hover:underline md:pr-2 pl-3 py-1" href="index.html">Start</a>
+          </li>
+          <li class="w-full md:w-auto">
+            <a class="block w-full md:inline-block hover:underline md:pr-2 pl-3 py-1"
+              href="bootstrap.html">Bootstrap</a>
+          </li>
+          <li class="w-full md:w-auto">
+            <a class="block w-full md:inline-block hover:underline bg-red-500 md:px-1 pl-3 py-1"
+              href="tailwind.html">Tailwind CSS</a>
+          </li>
+          <li class="w-full md:w-auto">
+            <a class="block w-full md:inline-block hover:underline md:pr-2 md:pl-1 pl-3 py-1"
+              href="bulma.html">Bulma</a>
+          </li>
+          <li class="w-full md:w-auto">
+            <a class="block w-full md:inline-block hover:underline pl-3 py-1" href="publishing.html">Publicering</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <button id="menuToggle" class="block focus:outline-none md:hidden z-30">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-[1320px] mx-auto px-4 py-8">
+    <div class="bg-white p-6 rounded-lg shadow-md mb-8 mx-auto">
+      <h1 class="text-3xl font-semibold text-red-700 mb-4">Tailwind CSS</h1>
+      <p class="text-green-700 mb-4">
+        Tailwind CSS är ett populärt CSS-ramverk som fokuserar på en så kallad utility-first-struktur, där man bygger
+        designen med hjälp av små, färdiga klasser men utan fördefinierade komponenter. Det kan installeras via
+        CLI-verktyget, som ett PostCSS-plugin för integration med verktyg som Parcel och Webpack, eller importeras via
+        CDN för snabb testning i webbläsaren
+        (framför allt för utvecklingssyften).
+      </p>
+      <p class="text-green-700">
+        Tailwind kan hämtas från: <a href="https://tailwindcss.com/">https://tailwindcss.com/</a>
+      </p>
+      <h3 class="text-2xl font-semibold text-red-700 mt-4 mb-2">Tankar om användningen</h3>
+      <p class="text-green-700 mb-4">Jag tyckte att det var lite krångligt att installera Tailwind även fast att
+        instruktionerna vid första anblick såg enkla ut. Jag använder Parcel i det hjär projektet och följde
+        installationsanvisningarna som fanns där men hade ändå problem ett tag innan jag fick det att fungera. Jag vet
+        egentligen inte vad det var som krånglade men jag fick sitta och prova lite olika varianter tills det
+        fungerade.</p>
+      <p class="text-green-700 mb-4">Tailwind CSS är mycket friare i sin användning i jämförelse med Bootstrap men det
+        blir
+        rörigt och lite överväldigande att se alla olika klasser i html-koden. Jag tycker att det är svårt att snabbt få
+        en överblick vad man behöver ändra när man sitter med designen, utan att råka skriva samma klass två gånger
+        eller för att säkerställa att man inkluderat klasser för olika skärmstorlekar exempelvis. Det var ganska lätt
+        att hitta i
+        dokumentationen efter själva installationen, men lite tråkigt att det finns många färdiga komponenter som är
+        bakom en betalvägg
+        (tailwindui.com) istället för
+        fritt tillgängliga som i Bootstrap. Men även i det här ramverket är det ju skönt att responsiviteten inkluderas.
+      </p>
+      <p class="text-green-700">Jag hittade extensionen Tailwind CSS IntelliSense i VSC som jag tyckte underlättade
+        mycket i
+        form av att man får upp auto-complete förslag och att man kan hålla över klasserna och se vad de gör. Jag är
+        lite kluven i vad jag tycker om Tailwind CSS, å ena sidan tycker jag om att det är så fritt och att man kan
+        sätta
+        ihop det som man vill mycket enklare än i Bootstrap. Å andra sidan tycker jag att koden blir jobbigare att
+        arbeta med, framför allt när man suttit några timmar vid datorn, för att se och hålla isär vad de olika
+        klasserna
+        gör. Men jag anar att det är som med det mesta; att om man använder det mer så lär man sig vad saker heter och
+        lättare kan scanna av koden under utveckling.</p>
+    </div>
+
+    <div class="flex flex-wrap lg:flex-nowrap lg:space-x-8">
+
+      <form id="wishListForm" class="w-full lg:w-1/3 space-y-4 p-6 bg-white shadow-md rounded-lg">
+        <h2 class="text-2xl font-semibold text-red-700 mb-4 text-center">Skriv vad du önskar dig</h2>
+        <div>
+          <label for="wisherName" class="block text-sm font-medium text-green-700">Ditt namn:</label>
+          <input type="text" id="wisherName" name="wisherName"
+            class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:border-green-500 focus:ring-green-500"
+            required />
+        </div>
+
+        <div>
+          <label for="itemName" class="block text-sm font-medium text-green-700">Namn på saken:</label>
+          <input type="text" id="itemName" name="itemName" required
+            class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:border-green-500 focus:ring-green-500" />
+        </div>
+
+        <div>
+          <label for="itemDescription" class="block text-sm font-medium text-green-700">Ytterligare info (t.ex. pris,
+            butik, specifikationer):</label>
+          <textarea id="itemDescription" name="itemDescription" rows="3" cols="50"
+            class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:border-green-500 focus:ring-green-500"
+            required></textarea>
+        </div>
+
+        <div>
+          <label for="priorityField" class="block text-sm font-medium text-green-700">Prioritet (1-5):</label>
+          <select id="priorityField" name="priorityField"
+            class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:border-green-500 focus:ring-green-500"
+            required>
+            <option value="5">5 - Hög</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1 - Låg</option>
+          </select>
+
+          <div class="flex items-center justify-center my-4">
+            <label for="promiseCheckbox" class="ml-2 block text-sm text-green-700">Jag lovar att jag har varit snäll i
+              år</label>
+            <input type="checkbox" id="promiseCheckbox" name="promiseCheckbox"
+              class="h-4 w-4 ml-2 text-green-600 border-gray-300 rounded focus:ring-green-500" />
+          </div>
+
+          <div>
+            <button type="submit" id="submitButton" disabled
+              class="mx-auto block p-2 bg-green-700 text-white font-semibold rounded-md hover:bg-green-800 disabled:opacity-50 disabled:cursor-not-allowed">
+              Lägg till i önskelistan</button>
+          </div>
+      </form>
+
+      <div class="w-full lg:w-2/3 bg-white p-5 rounded-lg shadow-md mt-8 lg:mt-0">
+        <h2 class="text-2xl font-semibold text-red-700 mb-4 text-center">Önskelistor för Julklappar</h2>
+
+        <table id="wishList" class="w-full border border-gray-300 table-auto">
+          <thead>
+            <tr class="bg-green-800">
+              <th class="px-2 py-2 text-left border-b border-gray-300 text-white">Namn</th>
+              <th class="px-2 py-2 text-left border-b border-gray-300 text-white">Namn på saken</th>
+              <th class="px-2 py-2 text-left border-b border-gray-300 text-white">Ytterligare info</th>
+              <th class="px-2 py-2 text-left border-b border-gray-300 text-white">Prioritet</th>
+              <th class="px-2 py-2 text-left border-b border-gray-300 text-white">Ta bort</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-gray-200">
+              <td class="px-2 py-2 border-b border-gray-300">Annelie</td>
+              <td class="px-2 py-2 border-b border-gray-300">Volvo XC90</td>
+              <td class="px-2 py-2 border-b border-gray-300">
+                800 000 kr, grön färg, säljs hos valfri volvohandlare
+              </td>
+              <td class="px-2 py-2 border-b border-gray-300 text-center">4</td>
+              <td class="px-2 py-2 border-b border-gray-300">
+                <button class="text-red-500">Ta bort</button>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-200">
+              <td class="px-2 py-2 border-b border-gray-300">Erik</td>
+              <td class="px-2 py-2 border-b border-gray-300">Radiostyrd bil</td>
+              <td class="px-2 py-2 border-b border-gray-300">
+                20 000 kr, svart färg, säljs på nätet
+              </td>
+              <td class="px-2 py-2 border-b border-gray-300 text-center">5</td>
+              <td class="px-2 py-2 border-b border-gray-300">
+                <button class="text-red-500">Ta bort</button>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-200">
+              <td class="px-2 py-2 border-b border-gray-300">Maja</td>
+              <td class="px-2 py-2 border-b border-gray-300">Darth vader-kläder</td>
+              <td class="px-2 py-2 border-b border-gray-300">och lasersvärd!</td>
+              <td class="px-2 py-2 border-b border-gray-300 text-center">5</td>
+              <td class="px-2 py-2 border-b border-gray-300">
+                <button class="text-red-500">Ta bort</button>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-200">
+              <td class="px-2 py-2 border-b border-gray-300">Erik</td>
+              <td class="px-2 py-2 border-b border-gray-300">Strumpor</td>
+              <td class="px-2 py-2 border-b border-gray-300">Svarta</td>
+              <td class="px-2 py-2 border-b border-gray-300 text-center">2</td>
+              <td class="px-2 py-2 border-b border-gray-300">
+                <button class="text-red-500">Ta bort</button>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-200">
+              <td class="px-2 py-2 border-b border-gray-300">Annelie</td>
+              <td class="px-2 py-2 border-b border-gray-300">Ny frisyr</td>
+              <td class="px-2 py-2 border-b border-gray-300">1200 kr, presentkort hos frisören</td>
+              <td class="px-2 py-2 border-b border-gray-300 text-center">5</td>
+              <td class="px-2 py-2 border-b border-gray-300">
+                <button class="text-red-500">Ta bort</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button id="clearTableButton"
+          class="mx-auto block mt-4 p-2 bg-red-500 text-white font-semibold rounded-md hover:bg-red-600">Rensa hela
+          listan</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-red-800 text-white text-center py-4 mt-8">
+    <div class="container">
+      <p>🎄 DT193G - Moment 1 | &copy; 2024 Annelie Svensson 🎄</p>
+    </div>
+  </footer>
+</body>
+
+</html>

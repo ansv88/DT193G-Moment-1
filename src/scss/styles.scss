@@ -1,0 +1,58 @@
+//Importera Bootstraps CSS
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//Anpassade färger
+thead.thead-green-white-custom,
+thead.thead-green-white-custom th {
+  background-color: #166534; //Motsvarar Tailwinds bg-green-800
+  color: #ffffff;
+}
+
+.bg-red-custom-500 {
+  background-color: #ef4444; //Motsvarar Tailwinds red-500
+}
+
+.bg-red-custom-800 {
+  background-color: #991b1b; //Motsvarar Tailwinds bg-red-800
+}
+
+.text-red-custom-700 {
+  color: #b91c1c; //Motsvarar Tailwinds red-700
+}
+
+//Navigering
+.navbar-nav .nav-link {
+  padding: 0.25rem 0.5rem;
+}
+
+.navbar-brand {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.5rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-link.active {
+  background-color: #ef4444;
+  color: white;
+}
+
+.custom-container {
+  max-width: 1320px;
+}
+
+//Ta bort-knappar
+.btn-remove {
+  background-color: transparent;
+  border: none;
+  color: #ef4444; //Motsvarar Tailwinds red-500
+  padding: 0;
+  font-size: 1rem;
+  cursor: pointer;
+}

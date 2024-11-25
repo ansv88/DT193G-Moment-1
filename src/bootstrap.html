@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DT193G - Moment 1 | Bootstrap</title>
+  <link rel="stylesheet" href="scss/styles.scss" />
+  <script src="https://kit.fontawesome.com/96c5f1dfde.js" crossorigin="anonymous"></script>
+  <script src="js/main.js" type="module"></script>
+</head>
+
+<body class="bg-light">
+  <header class="bg-red-custom-800">
+    <nav class="navbar navbar-expand-lg py-3 py-lg-2">
+      <div class="container custom-container">
+        <a class="navbar-brand fw-bold fs-4 text-white" href="index.html">Moment 1</a>
+
+        <button class="navbar-toggler border-1 border-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars text-white border-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link fs-5 text-white" href="index.html">Start</a></li>
+            <li class="nav-item">
+              <a class="nav-link active fs-5 text-white" aria-current="page" href="bootstrap.html">Bootstrap</a>
+            </li>
+            <li class="nav-item"><a class="nav-link fs-5 text-white" href="tailwind.html">Tailwind CSS</a></li>
+            <li class="nav-item"><a class="nav-link fs-5 text-white" href="bulma.html">Bulma</a></li>
+            <li class="nav-item"><a class="nav-link fs-5 text-white" href="publishing.html">Publicering</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container-lg py-4">
+    <div class="bg-white rounded shadow p-4 mb-4">
+      <h1 class="text-red-custom-700 fs-2">Bootstrap</h1>
+      <p class="text-success">
+        Bootstrap är det mest populära och mest använda CSS-ramverket just nu. Det kan installeras via package manager,
+        importeras via CDN, eller laddas ner som källkod. Bootstrap bygger på ett grid-system som
+        använder flexbox som gör det möjligt att skapa responsiva och skalbara layouter. Ramverket
+        inkluderar också många färdiga komponenter som knappar, formulär och navigationsmenyer med tillhörande JavaScript.
+      </p>
+      <p class="text-success">
+ Bootstrap kan hämtas från: <a
+          href="https://getbootstrap.com/">https://getbootstrap.com/</a>
+      </p>
+      <h3 class="text-red-custom-700 fs-4">Tankar om användningen</h3>
+      <p class="text-success">
+        Jag valde att inkludera Bootstrap via NPM samt att använda Parcel i projektet.
+        Det finns gedigen dokumentation på webbplatsen för Bootstrap, men det är nästan så
+        mycket att det blir svårt att överblicka. Utan att ha arbetat förut med ramverket var det lite
+        svårt att veta hur man börjar, vilka möjligheter som finns osv. Jag har baserat layouten på sidan
+        utifrån Tailwinds klasser på undersidan om Tailwind och sedan valt att anpassa övriga undersidor och ramverk
+        därefter. Det var ett medvetet val då jag ville
+        prova att anpassa just Bootstrap. Det visade sig mycket riktigt vara svårt att få till ändringar i
+        Bootstrap. Jag försökte följa dokumentationen för att till exempel lägga till egna färger i theme-colors men
+        fick
+        det inte
+        alls att fungera. Till slut valde jag att strunta i att inkludera dem i Bootstrap och lade dem "löst" så att
+        säga i styles.scss. Det fungerar ju att göra så i ett sådant här litet projekt men i större, "riktiga" projekt
+        sedan bör nog detta göras för att göra det enligt konvention och göra det lättare för andra att hitta i koden
+        också.
+      </p>
+      <p class="text-success">
+        Även om det är svårt att ändra vissa saker i Bootstrap är ändå komponenterna och responsiviteten i de olika
+        delarna otroligt tacksamma att arbeta med. Jag förstår att många väljer att använda Bootstrap och jag kan tänka
+        mig att det går fort att göra en första design på en webbplats bara man lärt sig klassnamnen och hur allt är
+        uppbyggt lite bättre. Första
+        gången jag såg Bootstrap tyckte jag att det såg ganska stökigt ut, i jämförelse med hur html-koden
+        ser ut utan. Men sedan när jag också började titta på Tailwind samtidigt såg Bootstrap med
+        en gång ganska lindrigt ut... Jag ser också fördelen med att använda CSS-ramverk överlag utifrån att koden är
+        samlad på ett annat sätt i en enda fil utöver enstaka anpassningar, vilket gör det ganska lätt att överblicka
+        och snabbt se vilka klasser som styr vilka element. Just Bootstrap-utseendet gör att webbplatser kan se lite
+        generiska ut, så jag tror ändå att det är viktigt att man är noga med anpassningar för att webbplatsen ska passa
+        sitt syfte och grafiska profil.
+      </p>
+      <p class="text-success">
+        Jag tyckte att det var roligt att prova Bootstrap och vill gärna jobba mer i det för att lära mig det bättre.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-4">
+
+        <form id="wishListForm" class="bg-white p-4 rounded shadow">
+          <h2 class="text-red-custom-700 fs-4 text-center">Skriv vad du önskar dig</h2>
+          <div class="mb-3">
+            <label for="wisherName" class="form-label text-success">Ditt namn:</label>
+            <input type="text" id="wisherName" name="wisherName" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="itemName" class="form-label text-success">Namn på saken:</label>
+            <input type="text" id="itemName" name="itemName" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="itemDescription" class="form-label text-success">Ytterligare info (t.ex. pris, butik,
+              specifikationer):</label>
+            <textarea class="form-control" id="itemDescription" name="itemDescription" rows="3" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="priorityField" class="form-label text-success">Prioritet (1-5):</label>
+            <select id="priorityField" name="priorityField" class="form-select" required>
+              <option value="5">5 - Hög</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1 - Låg</option>
+            </select>
+          </div>
+          <div class="mb-3 text-center">
+            <div class="form-check d-flex align-items-center justify-content-center">
+              <label for="promiseCheckbox" class="form-check-label text-success">
+                Jag lovar att jag har varit snäll i år
+              </label>
+              <input class="form-check-input ms-2" type="checkbox" id="promiseCheckbox" name="promiseCheckbox" />
+            </div>
+          </div>
+
+          <div class="mb-3 text-center">
+            <button type="submit" id="submitButton" class="btn btn-success" disabled>
+              Lägg till i önskelistan
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-lg-8">
+        <div class="bg-white p-4 rounded shadow">
+          <h2 class="text-red-custom-700 fs-4 text-center mb-3">Önskelista för Julklappar</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover" id="wishList">
+              <thead class="thead-green-white-custom">
+                <tr>
+                  <th>Namn</th>
+                  <th>Namn på saken</th>
+                  <th>Ytterligare info</th>
+                  <th>Prioritet</th>
+                  <th>Ta bort</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Annelie</td>
+                  <td>Volvo XC90</td>
+                  <td>800 000 kr, grön färg, säljs hos valfri volvohandlare</td>
+                  <td class="text-center">4</td>
+                  <td><button class="btn-remove">Ta bort</button></td>
+                </tr>
+                <tr>
+                  <td>Erik</td>
+                  <td>Radiostyrd bil</td>
+                  <td>20 000 kr, svart färg, säljs på nätet</td>
+                  <td class="text-center">5</td>
+                  <td><button class="btn-remove">Ta bort</button></td>
+                </tr>
+                <tr>
+                  <td>Maja</td>
+                  <td>Darth vader-kläder</td>
+                  <td>och lasersvärd!</td>
+                  <td class="text-center">5</td>
+                  <td><button class="btn-remove">Ta bort</button></td>
+                </tr>
+                <tr>
+                  <td>Erik</td>
+                  <td>Strumpor</td>
+                  <td>Svarta</td>
+                  <td class="text-center">2</td>
+                  <td><button class="btn-remove">Ta bort</button></td>
+                </tr>
+                <tr>
+                  <td>Annelie</td>
+                  <td>Ny frisyr</td>
+                  <td>1200 kr, presentkort hos frisören</td>
+                  <td class="text-center">5</td>
+                  <td><button class="btn-remove">Ta bort</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="text-center">
+            <button id="clearTableButton" class="btn btn-danger w-auto mt-3">Rensa hela listan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-red-custom-800 text-white text-center py-3 mt-8">
+    <div class="container mx-auto">
+      <p class="mb-0">🎄 DT193G - Moment 1 | &copy; 2024 Annelie Svensson 🎄</p>
+    </div>
+  </footer>
+</body>
+
+</html>

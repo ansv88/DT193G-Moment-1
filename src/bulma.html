@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DT193G - Moment 1 | Bulma</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="css/bulma-custom.css">
+  <script src="js/main.js" type="module"></script>
+</head>
+
+<body class="has-background-light">
+  <header class="navbar red-custom is-smaller">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item has-text-white has-text-weight-bold is-size-4 ml-2" href="index.html">Moment 1</a>
+
+        <button id="menuToggle" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false"
+          data-target="navbarMenu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div id="navbarMenu" class="navbar-menu red-custom">
+        <div class="navbar-end">
+          <a class="navbar-item has-text-white is-size-5" href="index.html">Start</a>
+          <a class="navbar-item has-text-white is-size-5" href="bootstrap.html">Bootstrap</a>
+          <a class="navbar-item has-text-white is-size-5" href="tailwind.html">Tailwind CSS</a>
+          <a class="navbar-item has-text-white red-custom-highlight is-size-5" href="bulma.html">Bulma</a>
+          <a class="navbar-item has-text-white is-size-5" href="publishing.html">Publicering</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="section pt-custom">
+    <div class="container box mb-5">
+      <h1 class="is-size-3 has-text-weight-semibold text-red-custom mb-3">Bulma</h1>
+      <p class="text-green-custom mb-3">Bulma är ett annat lite mer lättviktigt CSS-ramverk som kan installeras via package
+        manager, via CDN eller genom att ladda ner källkoden direkt. Bulma bygger helt på flexbox, som gör det smidigt
+        att strukturera layouten och hantera responsiviteten. Bulma använder relativt enkel syntax och
+        också färdiga komponenter som knappar, formulär och navigationsmenyer.</p>
+        <p class="text-green-custom">Bulma kan hämtas från: <a href="https://bulma.io/">https://bulma.io/</a></p>
+        <h3 class="is-size-4 has-text-weight-semibold text-red-custom mt-4">Tankar om användningen</h3>
+      <p class="text-green-custom mb-3">Jag upplever att klassnamnen blir mer logiska i Bulma och lättare att komma ihåg än
+        vad det är för mig att komma ihåg vad saker heter i Bootstrap och Tailwind. Jag tycker också att man snabbt får
+        en bra överblick över designen i koden, just på grund av färre klasser men med mer beskrivande klassnamn. Jag
+        tycker också att dokumentationen var relativt enkel att hitta i och inte kändes så överväldigande som till
+        exempel dokumentationen för Bootstrap.</p>
+      <p class="text-green-custom">Av de fyra olika CSS-ramverken jag provat i den här uppgiften så tyckte jag bäst om
+        att använda Bulma. Jag upplever att det är ganska lagom i omfattning och underlättar designen men ändå lämnar
+        utrymme för egen anpassning relativt enkelt.</p>
+    </div>
+
+    <div class="container">
+      <div class="columns is-centered is-variable is-4">
+        <div class="column is-one-third pl-0-desktop">
+
+          <form id="wishListForm" class="box has-background-white">
+            <h2 class="is-size-4 has-text-weight-semibold text-red-custom has-text-centered mb-4">Skriv vad du önskar
+              dig
+            </h2>
+            <div class="field">
+              <label for="wisherName" class="label text-green-custom">Ditt namn:</label>
+              <div class="control">
+                <input type="text" id="wisherName" name="wisherName" class="input" required />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="itemName" class="label text-green-custom">Namn på saken:</label>
+              <div class="control">
+                <input type="text" id="itemName" name="itemName" class="input" required />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="itemDescription" class="label text-green-custom">Ytterligare info (t.ex. pris, butik,
+                specifikationer):</label>
+              <div class="control">
+                <textarea id="itemDescription" name="itemDescription" rows="3" class="textarea" required></textarea>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="priorityField" class="label text-green-custom">Prioritet (1-5):</label>
+              <div class="control">
+                <div class="select is-fullwidth">
+                  <select id="priorityField" name="priorityField" required>
+                    <option value="5">5 - Hög</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1 - Låg</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field is-flex is-align-items-center mb-4 is-justify-content-center">
+              <label for="promiseCheckbox" class="label text-green-custom mb-0 mr-2">Jag lovar att jag har varit snäll i
+                år</label>
+              <input type="checkbox" id="promiseCheckbox" name="promiseCheckbox" />
+            </div>
+
+            <div class="field">
+              <div class="control has-text-centered">
+                <button type="submit" id="submitButton" class="button is-custom-green" disabled>
+                  Lägg till i önskelistan
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="column is-two-thirds pr-0-desktop">
+          <div class="box has-shadow has-background-white">
+            <h2 class="is-size-4 has-text-weight-semibold text-red-custom has-text-centered mb-4">Önskelista för
+              Julklappar</h2>
+
+            <div class="table-container">
+              <table id="wishListTable" class="table is-hoverable">
+                <thead>
+                  <tr class="green-custom has-text-white">
+                    <th class="has-text-white">Namn</th>
+                    <th class="has-text-white">Namn på saken</th>
+                    <th class="has-text-white">Ytterligare info</th>
+                    <th class="has-text-white">Prioritet</th>
+                    <th class="has-text-white">Ta bort</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Annelie</td>
+                    <td>Volvo XC90</td>
+                    <td>800 000 kr, grön färg, säljs hos valfri volvohandlare</td>
+                    <td>4</td>
+                    <td><button class="text-red-custom">Ta bort</button></td>
+                  </tr>
+                  <tr>
+                    <td>Erik</td>
+                    <td>Radiostyrd bil</td>
+                    <td>20 000 kr, svart färg, säljs på nätet</td>
+                    <td>5</td>
+                    <td><button class="text-red-custom">Ta bort</button></td>
+                  </tr>
+                  <tr>
+                    <td>Maja</td>
+                    <td>Darth vader-kläder</td>
+                    <td>och lasersvärd!</td>
+                    <td>5</td>
+                    <td><button class="text-red-custom">Ta bort</button></td>
+                  </tr>
+                  <tr>
+                    <td>Erik</td>
+                    <td>Strumpor</td>
+                    <td>Svarta</td>
+                    <td>2</td>
+                    <td><button class="text-red-custom">Ta bort</button></td>
+                  </tr>
+                  <tr>
+                    <td>Annelie</td>
+                    <td>Ny frisyr</td>
+                    <td>1200 kr, presentkort hos frisören</td>
+                    <td>5</td>
+                    <td><button class="text-red-custom">Ta bort</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="has-text-centered">
+              <button id="clearTableButton"
+                class="button red-custom-highlight red-custom-highlight:hover has-text-white">Rensa hela listan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer py-4 red-custom has-text-white has-text-centered">
+    <div>
+      <p>🎄 DT193G - Moment 1 | &copy; 2024 Annelie Svensson 🎄</p>
+    </div>
+  </footer>
+</body>
+
+</html>
