@@ -21,6 +21,10 @@
     text-decoration: none;
     padding: 1rem;
   }
+
+  .logo:hover {
+    color: white;
+  }
   
   .hamburger {
     display: block;
@@ -95,12 +99,21 @@
   }
   
   h2,
+  h3,
   h4 {
     color: #b91c1c; /* Motsvarar Tailwinds red-700 */
+  }
+
+  h3 {
+    font-size: 2.2rem;
   }
   
   .text-green-custom {
     color: #166534; /* Motsvarar Tailwinds bg-green-800 */
+  }
+
+  .li-color-con {
+  color: #b91c1c; /* Motsvarar Tailwinds red-700 */
   }
   
   .footer {

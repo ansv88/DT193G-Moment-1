@@ -35,10 +35,52 @@
   <main class="container">
     <div class="box">
       <h2>Publicering</h2>
-      <p class="text-green-custom">Beskriv den publicerings-plattform du valt för att publicera dina webbplats.
-        Ta med saker som kod-stöd (vilka programmerings-språk som går att använda), kostnad, för- och nackdelar och
-        andra saker du tycker är utmärkande.
-        Beskriv även hur arbetssättet är för att publicera arbetsfiler till denna webbhost.</p>
+      <p class="text-green-custom">Jag har valt att använda Vercel som publiceringsplattform för min webbplats. Tidigare
+        har jag enbart använt Render, så det var intressant att se hur det funkade med Vercel. Jag upplever att Vercel
+        var enklare än Render att publicera på, men så sett inkluderar inte Vercel någon inbyggd databas som Render gör (PostgreSQL).</p>
+      <h3>Kodstöd</h3>
+      <p class="text-green-custom">Vercel stödjer många olika programmeringsspråk och ramverk. Det är särskilt optimerat
+        för frontend-ramverk som Next.js, React, Vue och Angular. Vercel kan hantera statiska webbplatser och serverlösa
+        funktioner, vilket innebär att man kan använda
+        språk som JavaScript, TypeScript, Go eller Python för backendfunktionalitet.</p>
+      <h3>Kostnad</h3>
+      <p class="text-green-custom">Vercel har flera olika nivåer och priser för användare. Det finns en Hobby-plan som
+        är en gratis och som inkluderar grundläggande funktioner för personliga projekt.
+        Det finns en Pro-plan som kostar $20 per användare och månad, vilket ger tillgång till avancerade funktioner och
+        bättre prestanda. Det finns även möjlighet att lägga till extra resurser och funktioner som tillägg till
+        Pro-planen, vilket innebär ytterligare kostnader. Slutligen finns också planen Enterprise som är en anpassad
+        prissättning för större
+        organisationer med behov av skräddarsydda lösningar och support.</p>
+      <h3>För- och nackdelar</h3>
+      <p class="text-green-custom">
+      <dl class="text-green-custom">
+        <li><i class="fa-solid fa-plus"></i> Väldigt enkel sign up/installation.</li>
+        <li><i class="fa-solid fa-plus"></i> Enkel integration med Git-plattformar som GitHub, GitLab och Bitbucket,
+          vilket möjliggör automatisk distribution vid varje commit.</li>
+        <li><i class="fa-solid fa-plus"></i> Gratis Hobby-plan för mindre projekt som inkluderar relativt snabba
+          laddningstider (globalt CDN) och prestanda.</li>
+        <li><i class="fa-solid fa-plus"></i> Serverlösa funktioner som kan skrivas i flera språk som gör det enkelt att
+          lägga till backendlogik till en webbplats utan att hantera själva infrastrukturen.</li>
+        <li><i class="fa-solid fa-plus"></i> Automatiska förhandsgranskningar av pull requests, vilket underlättar
+          granskning.</li>
+      </dl>
+      <dl class="text-green-custom">
+        <li><i class="fa-solid fa-minus li-color-con"></i> Den kostnadsfria planen har begränsningar i bandbredd och
+          byggtider vilket
+          kan vara otillräckligt för större projekt.</li>
+        <li><i class="fa-solid fa-minus li-color-con"></i> Vissa avancerade funktioner och högre prestanda kräver en
+          betalplan och vid
+          större webbplatser kan kostnaderna snabbt bli väldigt stora.</li>
+      </dl>
+
+      </p>
+      <h3>Publicering av arbetsfiler</h3>
+      <p class="text-green-custom"> För att publicera arbetsfiler till Vercel kopplar man sitt
+        Git-repository från plattformar som GitHub, GitLab eller Bitbucket till Vercel. Därefter hanterar Vercel
+        automatiskt distributioner, så varje gång man pushar ändringar till sitt repository skapas en ny distribution
+        automatiskt. Vid pull requests genererar Vercel en unik URL för att förhandsgranska ändringarna innan de går
+        live. Dessutom kan man enkelt hantera miljövariabler direkt i Vercels dashboard för att konfigurera olika
+        miljöer som utveckling, test och produktion.</p>
     </div>
     <div class="box">
       <h4>Milligram</h4>
